@@ -1,0 +1,31 @@
+${JENKINS_HOME}/workspace/SampleWebApp
+
+https://github.com/Harshit-Bajaj/SampleWebApp.git
+
+
+
+original code of jenkins.model.config.xml file==>
+
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.model.JenkinsLocationConfiguration>
+  <jenkinsUrl>http://localhost:8080/jenkins/</jenkinsUrl>
+</jenkins.model.JenkinsLocationConfiguration>
+
+
+changes i made to automatically stop reload the file==>
+
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.model.JenkinsLocationConfiguration>
+  <jenkinsUrl>http://localhost:8080/jenkins/</jenkinsUrl>
+  <arguments>--no-reload</arguments>
+</jenkins.model.JenkinsLocationConfiguration>
+
+
+
+
+
+
+
+
+
+https://www.youtube.com/watch?v=vfw8zXyJtQA&list=PPSV
